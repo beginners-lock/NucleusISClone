@@ -25,7 +25,7 @@
 	}
 
 	#logo{
-		height:80px; width:auto;
+		height:60px; width:auto;
 	}
 
 	#navcontainer{
@@ -34,17 +34,17 @@
 		background-color:#623981; padding:60px 40px 0px 50px; transition-duration:0.25s;
 	}
 
-	#navmenu { width:50px; height:50px; }
+	#navmenu { width:30px; height:30px; }
 	#closediv{ width:100%; display:flex; flex-direction:row; justify-content:flex-end; margin-bottom:40px; }
-	#navclose{ width:40px; height:40px; }
+	#navclose{ width:20px; height:20px; }
 
 	.navtab{
-		font-family:Sora-Regular; font-size:30px; line-height:44px;
+		font-family:Sora-Bold; font-size:30px; line-height:44px;
 		border-radius:50px; padding:20px; color:white;
 	}
 
 	.activetab{ 
-		font-family:Sora-Regular; font-size:30px; color:white;
+		font-family:Sora-Bold; font-size:30px; color:white;
 		border-radius:50px; padding:20px; line-height:44px;
 	}
 
