@@ -1,0 +1,200 @@
+@font-face{
+	font-family:'Sora-Bold';
+	src:url(../fonts/Sora-Bold.ttf);
+}
+
+@font-face{
+	font-family:'Sora-Regular';
+	src:url(../fonts/Sora-Regular.ttf);
+}
+
+#clone{ font-family:Sora-Bold; border-bottom:3px red solid; }
+
+@media only screen and (min-width: 1024px){
+	body{
+		width:100vw; height:100vh; overflow-x:hidden; overflow-y:scroll; margin:0; padding:0;
+		display:flex; flex-direction:column; justify-content:flex-start; align-items:center; 
+		box-sizing:border-box; background-color:#E5E5E5;
+	}
+
+	nav{
+		position:fixed; top:0; left:0; z-index:10;
+		width:100vw; height:auto; overflow-x:hidden; overflow-y:hidden; margin:0; padding:15px 80px;
+		display:flex; flex-direction:row; justify-content:space-between; align-items:center; 
+		box-sizing:border-box; background-color:white;
+	}
+
+	#logo{
+		height:50px; width:auto;
+	}
+
+	#navcontainer{
+		width:60%; height:auto; box-sizing:border-box;
+		display:flex; flex-direction:row; align-items:center; justify-content:space-around; 
+	}
+
+	.navtab{
+		font-family:Sora-Regular; font-size:14px;
+		border-radius:50px; padding:10px 20px; color:black;
+	}
+
+	.activetab{ 
+		font-family:Sora-Regular; font-size:14px; color:white;
+		border-radius:50px; padding:10px 20px; background-color:#8E2B8D; 
+	}
+
+	#closediv, #navmenu, #navclose{ display:none; }
+
+	#about1{
+		width:100vw; height:auto; box-sizing:border-box;
+		display:flex; flex-direction:row; justify-content:space-between; align-items:center; padding:150px 80px 50px 80px;
+	}
+
+	.abouth1{ width:48%; font-family:Sora-Bold; font-size:50px; line-height:70px; box-sizing:border-box; }
+	.aboutp1{ width:48%; font-family:Sora-Regular; font-size:20px; line-height:35px; box-sizing:border-box; color:#595959; }
+
+	#aboutimg{
+		height:520px; width:100vw; box-sizing:border-box; object-fit:cover;
+	}
+
+	#hr{
+		width:90%; background-color:black; height:0px; border:none; border-bottom:0.5px black solid; margin:70px 80px;
+	}
+
+	#about2, #about3{
+		width:100vw; height:auto; box-sizing:border-box;
+		display:flex; flex-direction:row; justify-content:space-between; align-items:flex-start; padding:50px 80px 50px 80px;
+	}
+
+	#about2right{
+		display:flex; flex-direction:column; align-items:flex-start; justify-content:flex-start;
+		width:48%; box-sizing:border-box;
+	}
+
+	.aboutp2{ font-family:Sora-Bold; font-size:20px; line-height:35px; box-sizing:border-box; color:#000000;  }
+	.aboutp3{ font-family:Sora-Regular; font-size:20px; line-height:35px; box-sizing:border-box; color:#595959; }
+	.aboutp4{ width:48%; font-family:Sora-Bold; font-size:20px; line-height:35px; box-sizing:border-box; color:#000000;  }
+
+	#about4{
+		width:100%; padding:30px 80px; box-sizing:border-box;
+		display:flex; flex-direction:row; justify-content:space-between; align-items:flex-start; 
+	}
+
+	.about4child{
+		display:flex; flex-direction:column; align-items:flex-start; justify-content:flex-start;
+		width:48%; box-sizing:border-box;
+	}
+
+	.abouth2{
+		font-family:Sora-Bold; font-size:20px; line-height:70px; box-sizing:border-box; margin-bottom:30px;
+	}
+
+	.aboutp5{
+		width:320px; font-family:Sora-Regular; font-size:16px; line-height:24px; box-sizing:border-box; color:#595959;
+	}
+
+	#about5{
+		display:flex; flex-direction:row; align-items:center; justify-content:space-around;
+		width:100%; padding:40px 80px 70px 80px; box-sizing:border-box;
+	}
+
+	.about5child{
+		display:flex; flex-direction:column; justify-content:space-around; align-items:center;
+	}
+
+	.abouth3{ font-family:Sora-Bold; font-size:55px; margin-bottom:20px; }
+	.aboutp6{ font-family:Sora-Regular; font-size:26px; }
+
+	#home4{ 
+		height:89vh; width:100vw; background-color:#623981; box-sizing:border-box;
+		display:flex; flex-direction:row; align-items:center; justify-content:space-between;
+		display:flex; padding:50px 80px;
+	}
+
+	#home4img{ 
+		min-width:550px; min-height:400px; max-width:550px; max-height:400px;
+	}
+
+	#home4right{
+		width:40vw; box-sizing:border-box; color:white;
+	}
+
+	.home4header{
+		font-family:Sora-Bold; font-size:55px; line-height:80px; margin-bottom:20px;
+	}
+
+	.home4text{
+		font-family:Sora-Bold; font-size:24px; line-height:35px;
+		width:100%; text-align:left; margin-bottom:30px;
+	}
+
+	.h4textemph{ display:inline-block; vertical-align:middle; font-family:Sora-Regular; color:#F6C046; }
+
+	#socialscontainer, #footercontact{
+		display:flex; flex-direction:row; align-items:center; justify-content:space-between;
+		width:150px;
+	}
+
+	.contactsocials, .footersocials{ width:20px; height:auto; }
+
+	footer{
+		width:100vw; height:80vh; display:flex; flex-direction:column; color:white; padding:80px 80px 50px 80px;
+		align-items:center; justify-content:space-between; background-color:black; box-sizing:border-box;
+	}
+
+	#footertop{
+		width:100%; box-sizing:border-box;
+		display:flex; flex-direction:row; align-items:flex-start; justify-content:space-between;
+	}
+
+	.footercol{
+		width:25%;
+	}
+
+	.footersec{ margin-bottom:50px; }
+
+	.footerhead{
+		font-family:Sora-Bold; font-size:20px; margin-bottom:40px;
+	}
+
+	.footerel{
+		font-family:Sora-Regular; margin-bottom:30px;
+	}
+
+	#footerbtm{
+		width:100%;
+		display:flex; flex-direction:row; align-items:center; justify-content:space-between;
+	}
+
+	#copyright{
+		font-family:'Sora-Bold';
+	}
+
+	#footercontact{
+		margin-right:150px
+	}
+
+	.activetab:hover, .navtab:hover, #homebtn:hover, .productbtn:hover, #mail:hover, .contactsocials:hover, .footerel:hover{
+		cursor:pointer;
+	}
+
+	/* width */
+	::-webkit-scrollbar {
+	  width: 5px;
+	}
+
+	/* Track */
+	::-webkit-scrollbar-track {
+	  background: #f1f1f1;
+	}
+
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+	  background: #9A5099; transition-duration:0.25s;
+	}
+
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+	  background: #623981;
+	}
+}

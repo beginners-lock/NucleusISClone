@@ -1,0 +1,223 @@
+@font-face{
+	font-family:'Sora-Bold';
+	src:url(../fonts/Sora-Bold.ttf);
+}
+
+@font-face{
+	font-family:'Sora-Regular';
+	src:url(../fonts/Sora-Regular.ttf);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	#clone{ font-family:Sora-Bold; border-bottom:3px red solid; font-size:26px; }
+
+	body{
+		width:100vw; height:100vh; overflow-x:hidden; overflow-y:scroll; margin:0; padding:0;
+		display:flex; flex-direction:column; justify-content:flex-start; align-items:center; 
+		box-sizing:border-box; background-color:#E5E5E5;
+	}
+
+	nav{
+		position:fixed; top:0; left:0; z-index:10;
+		width:100vw; height:auto; overflow-x:hidden; overflow-y:hidden; margin:0; padding:15px 40px;
+		display:flex; flex-direction:row; justify-content:space-between; align-items:center; 
+		box-sizing:border-box; background-color:white;
+	}
+
+	#logo{
+		height:80px; width:auto;
+	}
+
+	#navcontainer{
+		position:fixed; left:100vw; top:0; width:60vw; height:100vh; box-sizing:border-box;
+		display:flex; flex-direction:column; align-items:flex-start; justify-content:flex-start; 
+		background-color:#623981; padding:60px 40px 0px 50px; transition-duration:0.25s;
+	}
+
+	#navmenu { width:50px; height:50px; }
+	#closediv{ width:100%; display:flex; flex-direction:row; justify-content:flex-end; margin-bottom:40px; }
+	#navclose{ width:40px; height:40px; }
+
+	.navtab{
+		font-family:Sora-Regular; font-size:30px; line-height:44px;
+		border-radius:50px; padding:20px; color:white;
+	}
+
+	.activetab{ 
+		font-family:Sora-Regular; font-size:30px; color:white;
+		border-radius:50px; padding:20px; line-height:44px;
+	}
+
+	#home1{
+		width:100vw; max-height:100vh; min-height:100vh; margin:0; padding:80px 40px 0px 40px; box-sizing:border-box;
+		background: #1c1e3c url(https://www.nucleusisafrica.com/images/bg-blur.png) no-repeat 50%/cover;
+		display:flex; flex-direction:row; align-items:center; justify-content:space-between;
+		overflow-y:hidden; overflow-x:hidden;
+	}
+
+	#homeleft{
+		display:flex; flex-direction:column; justify-content:space-around; align-items:flex-start;
+		color:white; box-sizing:border-box; width:48%;
+	}
+
+	#homemaintext{
+		font-family:Sora-Bold; font-size:45px; line-height:85px; margin-bottom:10px;
+	}
+
+	#homeminitext{
+		font-family:Sora-Regular; font-size:20px; line-height:35px; margin-bottom:50px;
+	}
+
+	#homebtn{
+		background-color:#9A5099; font-family:Sora-Bold; font-size:18px; padding:20px 30px; 
+		border-radius:50px;
+	}
+
+	#homeright{
+		display:flex; flex-direction:row; align-items:center; justify-content:flex-start;
+		
+	}
+
+	.homecol{
+		display:flex; flex-direction:column; justify-content:flex-start; align-items:center;
+		margin-right:10px;
+	}
+
+	#homeimg1, #homeimg2, #homeimg3, #homeimg4{
+		width:180px; height:auto; margin-bottom:10px;
+	} 
+
+	#home2{
+		min-height:68vh; max-height:68vh; width:100vw; box-sizing:border-box; overflow-x:hidden; overflow-y:hidden;
+		display:flex; flex-direction:column; justify-content:center; align-items:center;
+	}
+
+	#home2header, #home3header{
+		font-family:'Sora-Bold'; color:#002A3F; font-size:50px; margin-bottom:50px;
+	}
+
+	#partnerscontainer{
+		display:flex; flex-direction:row; align-items:center; justify-content:space-around;
+		width:800px; height:200px; flex-wrap:wrap;
+	}
+
+	.hl1cont{
+		width:150px; height:80px; background-color:white; display:flex; flex-direction:row;
+		align-items:center; justify-content:center;
+	}
+
+	#hl11, #hl12, #hl13, #hl14{ width:100%; height:auto; }
+	#hl15, #hl18, #hl10{width:80%; height:auto;}
+	#hl16, #hl17, #hl19{width:85%; height:auto;}
+
+	#home3{
+		width:100vw; height:auto;
+		display:flex; flex-direction:column; align-items:center; justify-content:flex-start;
+	}
+
+	#productscontainer{
+		width:100%; flex-wrap:wrap; margin-top:60px;
+		display:flex; flex-direction:row; justify-content:flex-start; align-items:flex-start;
+	}
+
+	.product1, .product2, .product3, .product4{
+		width:50%; height:500px; box-sizing:border-box; padding:0px 50px 0px 50px; color:white;
+		display:flex; flex-direction:column; align-items:flex-start; justify-content:center;
+	} 
+
+	.product5{
+		width:100%; height:500px; box-sizing:border-box; color:white; padding:0px 50px 0px 50px;
+		display:flex; flex-direction:row; align-items:center; justify-content:center;
+		overflow-y:hidden; overflow-x:hidden; position:relative;
+	}
+
+	#product5div{
+		display:flex; flex-direction:column; align-items:flex-start; justify-content:center;
+		overflow-y:hidden; overflow-x:hidden;
+	}
+
+	#product5img{
+		position:absolute; left:75%;
+	}
+
+	#product5text{ width:70%; }
+
+	.productheader{ font-family:Sora-Bold; font-size:45px; margin-bottom:20px; }
+	.producttext{ font-family:Sora-Regular; font-size:20px; margin-bottom:60px;  }
+	.productbtn{ font-family:'Sora-Bold'; width:auto; height:auto; padding:20px 30px; border-radius:50px;  }
+
+	.product1{ background:#623981 url(https://www.nucleusisafrica.com/images/product-one.png) no-repeat 100% 0/70%; }
+	.product2{ background:#f56868 url(https://www.nucleusisafrica.com/images/product-two.png) no-repeat 100% 0/70%; }
+	.product3{ background:#2bab7a url(https://www.nucleusisafrica.com/images/product-three.png) no-repeat 100% 0/70%; }
+	.product4{ background:#5d22ee url(https://www.nucleusisafrica.com/images/product-four.png) no-repeat 100% 0/70%; }
+	.product5{ background-color:#1c1e3c; }
+
+	#home4{ 
+		height:auto; width:100vw; background-color:#623981; box-sizing:border-box;
+		display:flex; flex-direction:row; align-items:center; justify-content:space-between;
+		display:flex; padding:100px 40px;
+	}
+
+	#home4img{ 
+		min-width:300px; min-height:250px; max-width:300px; max-height:250px;
+	}
+
+	#home4right{
+		width:45vw; box-sizing:border-box; color:white;
+	}
+
+	.home4header{
+		font-family:Sora-Bold; font-size:42px; line-height:70px; margin-bottom:20px;
+	}
+
+	.home4text{
+		font-family:Sora-Bold; font-size:22px; line-height:35px;
+		width:100%; text-align:left; margin-bottom:30px;
+	}
+
+	.h4textemph{ display:inline-block; vertical-align:middle; font-family:Sora-Regular; color:#F6C046; }
+
+	#socialscontainer, #footercontact{
+		display:flex; flex-direction:row; align-items:center; justify-content:space-between;
+		width:150px;
+	}
+
+	.contactsocials, .footersocials{ width:20px; height:auto; }
+
+	footer{
+		width:100vw; height:auto; display:flex; flex-direction:column; color:white; padding:80px 40px 50px 40px;
+		align-items:center; justify-content:space-between; background-color:black; box-sizing:border-box;
+	}
+
+	#footertop{
+		width:100%; box-sizing:border-box;
+		display:flex; flex-direction:row; align-items:flex-start; justify-content:space-between;
+	}
+
+	.footercol{
+		width:23%;
+	}
+
+	.footersec{ margin-bottom:50px; }
+
+	.footerhead{
+		font-family:Sora-Bold; font-size:20px; margin-bottom:40px;
+	}
+
+	.footerel{
+		font-family:Sora-Regular; margin-bottom:30px;
+	}
+
+	#footerbtm{
+		width:100%; margin-top:70px;
+		display:flex; flex-direction:row; align-items:center; justify-content:space-between;
+	}
+
+	#copyright{
+		font-family:'Sora-Bold';
+	}
+
+	#footercontact{
+		margin-right:150px
+	}
+}

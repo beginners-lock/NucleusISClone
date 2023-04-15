@@ -1,0 +1,169 @@
+@font-face{
+	font-family:'Sora-Bold';
+	src:url(../fonts/Sora-Bold.ttf);
+}
+
+@font-face{
+	font-family:'Sora-Regular';
+	src:url(../fonts/Sora-Regular.ttf);
+}
+
+@media only screen and (max-width: 500px){
+	body{
+		width:100vw; height:100vh; overflow-x:hidden; overflow-y:scroll; margin:0; padding:0;
+		display:flex; flex-direction:column; justify-content:flex-start; align-items:center; 
+		box-sizing:border-box; background-color:#E5E5E5;
+	}
+
+	nav{
+		position:fixed; top:0; left:0; z-index:10;
+		width:100vw; height:auto; overflow-x:hidden; overflow-y:hidden; margin:0; padding:15px 20px;
+		display:flex; flex-direction:row; justify-content:space-between; align-items:center; 
+		box-sizing:border-box; background-color:white;
+	}
+
+	#logo{
+		height:50px; width:auto;
+	}
+
+	#navcontainer{
+		position:fixed; left:100vw; top:0; width:100vw; height:100vh; box-sizing:border-box;
+		display:flex; flex-direction:column; align-items:flex-start; justify-content:flex-start; 
+		background-color:#623981; padding:40px 30px 0px 20px; transition-duration:0.25s;
+	}
+
+	#navmenu { width:30px; height:30px; }
+	#closediv{ width:100%; display:flex; flex-direction:row; justify-content:flex-end; margin-bottom:20px; }
+	#navclose{ width:20px; height:20px; }
+
+	.navtab{
+		font-family:Sora-Regular; font-size:22px; line-height:44px;
+		border-radius:50px; padding:10px 20px; color:white;
+	}
+
+	.activetab{ 
+		font-family:Sora-Regular; font-size:22px; color:white;
+		border-radius:50px; padding:10px 20px; line-height:44px;
+	}
+
+	#contactdiv1{ 
+		width:100vw; height:auto; box-sizing:border-box;
+		font-family:Sora-Bold; background-color:rgb(28,30,60);
+		padding:170px 20px 80px 20px; display:flex; flex-direction:column; align-items:center;
+		justify-content:flex-end; color:white; font-size:45px; text-align:center;
+	}
+
+	#contactdiv2{
+		width:100vw; height:auto; padding:70px 30px 50px 30px; box-sizing:border-box;
+		display:flex; flex-direction:column; align-items:center; justify-content:flex-start;
+	}
+
+	.contactdiv2child{
+		width:200px; height:200px; display:flex; flex-direction:column; justify-content:space-around;
+		align-items:center; border-radius:30px; transition-duration:0.5s; margin-bottom:40px;
+	}
+
+	.contactdiv2child:hover{ background-color:white; }
+
+	#contact20, #contact21, #contact22{
+		border-radius:50%; width:70px; height:70px; display:flex; flex-direction:row; align-items:center;
+		justify-content:space-around;
+	}
+
+	#contact20{ background-color:#B4E0C6; }
+	#contact21{ background-color:#FFEDB6; }
+	#contact22{ background-color:#FFCBC4; }
+
+	#contact20 img{ width:35px; height:auto; }
+	#contact21 img{ width:20px; height:auto; }
+	#contact22 img{ width:30px; height:auto; }
+
+	.contact2text{ font-family:Sora-Regular; font-size:20px; width:240px; text-align:center; color:#383A54; }
+
+	#contactdiv3{
+		width:100vw; height:auto; box-sizing:border-box;
+		display:flex; flex-direction:row; align-items:center; justify-content:center; padding:20px 20px 120px 20px;
+	}
+
+	#contactform{
+		background-color:white; width:100%; height:auto; border-radius:20px; padding:80px 40px; box-shadow:8px 8px 8px 8px rgba(240, 240, 240, 0.5);
+		box-sizing:border-box; display:flex; flex-direction:column; justify-content:flex-start; align-items:center; 
+	}
+
+	.contactformrow{
+		width:100%; display:flex; flex-direction:column; justify-content:space-between; align-items:center;
+	}
+
+	.contactinput{
+		font-family:'Sora-Regular'; font-size:16px; width:230px; padding:10px 20px;
+		border:none; border-bottom:1px grey solid; margin-bottom:10px; color:grey;
+	}
+
+	.contactinputdiv{ margin-bottom:40px; }
+
+	.contactformrow2{
+		width:100%; margin-bottom:50px;
+		box-sizing:border-box; display:flex; flex-direction:column; justify-content:flex-start; align-items:center; 
+	}
+
+	textarea{
+		border:none; border-bottom:1px grey solid; resize:none; color:grey; margin-bottom:10px;
+		font-family:'Sora-Regular'; font-size:16px; width:230px; height:60px; padding:10px 20px;
+	}
+
+	#contactformbtn{
+		font-family:Sora-Bold; font-size:16px; color:white; box-shadow:none; border:none;
+		border-radius:50px; padding:15px 80px; background-color:#8E2B8D;  margin-top:30px;
+	}
+
+	input:focus, textarea:focus, input:active, textarea:active{ outline:none; }
+
+	.contactinputmsg{
+		font-family:'Sora-Regular'; font-size:13px; color:red;
+	}
+
+	#footercontact{
+		display:flex; flex-direction:row; align-items:center; justify-content:space-between;
+		width:150px;
+	}
+
+	.footersocials{ width:20px; height:auto; }
+
+	footer{
+		width:100vw; height:auto; display:flex; flex-direction:column; color:white; padding:80px 20px 50px 20px;
+		align-items:center; justify-content:space-between; background-color:black; box-sizing:border-box;
+	}
+
+	#footertop{
+		width:100%; box-sizing:border-box; flex-wrap:wrap;
+		display:flex; flex-direction:row; align-items:flex-start; justify-content:space-between;
+	}
+
+	.footercol{
+		width:49%;
+	}
+
+	.footersec{ margin-bottom:50px; }
+
+	.footerhead{
+		font-family:Sora-Bold; font-size:20px; margin-bottom:40px;
+	}
+
+	.footerel{
+		font-family:Sora-Regular; margin-bottom:30px;
+	}
+
+	#footerbtm{
+		width:100%; margin-top:40px;
+		display:flex; flex-direction:column; align-items:center; justify-content:space-between;
+	}
+
+	#copyright{
+		font-family:'Sora-Bold';
+	}
+
+	#footercontact{
+		margin:20px 0px;
+	}
+
+}
