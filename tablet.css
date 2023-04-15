@@ -9,7 +9,7 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-	#clone{ font-family:Sora-Bold; border-bottom:3px red solid; font-size:26px; }
+	#clone{ font-family:Sora-Bold; border-bottom:3px red solid; font-size:22px; }
 
 	body{
 		width:100vw; height:100vh; overflow-x:hidden; overflow-y:scroll; margin:0; padding:0;
@@ -25,7 +25,7 @@
 	}
 
 	#logo{
-		height:80px; width:auto;
+		height:60px; width:auto;
 	}
 
 	#navcontainer{
@@ -34,9 +34,9 @@
 		background-color:#623981; padding:60px 40px 0px 50px; transition-duration:0.25s;
 	}
 
-	#navmenu { width:50px; height:50px; }
+	#navmenu { width:30px; height:30px; }
 	#closediv{ width:100%; display:flex; flex-direction:row; justify-content:flex-end; margin-bottom:40px; }
-	#navclose{ width:40px; height:40px; }
+	#navclose{ width:20px; height:20px; }
 
 	.navtab{
 		font-family:Sora-Regular; font-size:30px; line-height:44px;
@@ -49,7 +49,7 @@
 	}
 
 	#home1{
-		width:100vw; max-height:100vh; min-height:100vh; margin:0; padding:80px 40px 0px 40px; box-sizing:border-box;
+		width:100vw; max-height:90vh; min-height:90vh; margin:0; padding:70px 40px 50px 40px; box-sizing:border-box;
 		background: #1c1e3c url(https://www.nucleusisafrica.com/images/bg-blur.png) no-repeat 50%/cover;
 		display:flex; flex-direction:row; align-items:center; justify-content:space-between;
 		overflow-y:hidden; overflow-x:hidden;
